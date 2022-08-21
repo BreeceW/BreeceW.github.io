@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-zPLyL1QTtHEvE5Yg0bT8wOEsf49Z9gK3EhQD2forFPA=",
+      "hash": "sha256-cfgrIN+WQRRgwLvI4esUNbWDV2NbL37OqpCNxKOGAHM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -513,11 +513,11 @@
       "url": "_framework\/TerraFX.Interop.Windows.dll"
     },
     {
-      "hash": "sha256-3Vb8GvcstlCRlnrJkgFmppOALujDPAqRHbn0uGTsZ2Y=",
+      "hash": "sha256-GwapVUtDsKqTg0VRnxyG0FdsRFujZPKJNh3+0y4WR2E=",
       "url": "_framework\/dotnet.6.0.8.vgr1x14eoq.js"
     },
     {
-      "hash": "sha256-ZVpY16D6XUfz1qimcjE5Jo9Gz+zEuaPgLHYEooqkxTQ=",
+      "hash": "sha256-4f\/tHPbJOeOhbTfWaKihKgr8AdFMPAAtssCfyIls3t0=",
       "url": "_framework\/dotnet.wasm"
     },
     {
@@ -841,5 +841,5 @@
       "url": "Sounds\/wind.wav"
     }
   ],
-  "version": "1HOwkZNl"
+  "version": "U8ZTOghq"
 };
