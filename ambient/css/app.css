@@ -1,0 +1,281 @@
+﻿html, body {
+    font-size: 14px;
+    font-family: Segoe UI Variable Text, Segoe UI, sans-serif;
+}
+
+html {
+    --ControlCornerRadius: 4px;
+    --OverlayCornerRadius: 8px;
+    --CardCornerRadius: 8px;
+    --CardBorderThemeThickness: 1px;
+    --AcrylicTint: #FFFFFF;
+    --ControlElevationBorder: var(--ControlStrokeColorDefault) var(--ControlStrokeColorDefault) var(--ControlStrokeColorSecondary) var(--ControlStrokeColorDefault);
+    /*WinUI Colors*/
+    --TextFillColorPrimary: #000000E4;
+    --TextFillColorSecondary: #0000009E;
+    --TextFillColorTertiary: #00000072;
+    --TextFillColorDisabled: #0000005C;
+    --TextFillColorInverse: #FFFFFFFF;
+    --AccentTextFillColorDisabled: #0000005C;
+    --TextOnAccentFillColorSelectedText: #FFFFFFFF;
+    --TextOnAccentFillColorPrimary: #FFFFFFFF;
+    --TextOnAccentFillColorSecondary: #FFFFFFB3;
+    --TextOnAccentFillColorDisabled: #FFFFFFFF;
+    --ControlFillColorDefault: #FFFFFFB3;
+    --ControlFillColorSecondary: #F9F9F980;
+    --ControlFillColorTertiary: #F9F9F94D;
+    --ControlFillColorDisabled: #F9F9F94D;
+    --ControlFillColorTransparent: #FFFFFF00;
+    --ControlFillColorInputActive: #FFFFFFFF;
+    --ControlStrongFillColorDefault: #00000072;
+    --ControlStrongFillColorDisabled: #00000051;
+    --ControlSolidFillColorDefault: #FFFFFFFF;
+    --SubtleFillColorTransparent: #FFFFFF00;
+    --SubtleFillColorSecondary: #00000009;
+    --SubtleFillColorTertiary: #00000006;
+    --SubtleFillColorDisabled: #FFFFFF00;
+    --ControlAltFillColorTransparent: #FFFFFF00;
+    --ControlAltFillColorSecondary: #00000006;
+    --ControlAltFillColorTertiary: #0000000F;
+    --ControlAltFillColorQuarternary: #00000018;
+    --ControlAltFillColorDisabled: #FFFFFF00;
+    --ControlOnImageFillColorDefault: #FFFFFFC9;
+    --ControlOnImageFillColorSecondary: #F3F3F3FF;
+    --ControlOnImageFillColorTertiary: #EBEBEBFF;
+    --ControlOnImageFillColorDisabled: #FFFFFF00;
+    --AccentFillColorDisabled: #00000037;
+    --ControlStrokeColorDefault: #0000000F;
+    --ControlStrokeColorSecondary: #00000029;
+    --ControlStrokeColorOnAccentDefault: #FFFFFF14;
+    --ControlStrokeColorOnAccentSecondary: #00000066;
+    --ControlStrokeColorOnAccentTertiary: #00000037;
+    --ControlStrokeColorOnAccentDisabled: #0000000F;
+    --ControlStrokeColorForStrongFillWhenOnImage: #FFFFFF59;
+    --CardStrokeColorDefault: #0000000F;
+    --CardStrokeColorDefaultSolid: #EBEBEBFF;
+    --ControlStrongStrokeColorDefault: #00000072;
+    --ControlStrongStrokeColorDisabled: #00000037;
+    --SurfaceStrokeColorDefault: #75757566;
+    --SurfaceStrokeColorFlyout: #0000000F;
+    --SurfaceStrokeColorInverse: #FFFFFF15;
+    --DividerStrokeColorDefault: #0000000F;
+    --FocusStrokeColorOuter: #000000E4;
+    --FocusStrokeColorInner: #FFFFFFB3;
+    --CardBackgroundFillColorDefault: #FFFFFFB3;
+    --CardBackgroundFillColorSecondary: #F6F6F680;
+    --SmokeFillColorDefault: #0000004D;
+    --LayerFillColorDefault: #FFFFFF80;
+    --LayerFillColorAlt: #FFFFFFFF;
+    --LayerOnAcrylicFillColorDefault: #FFFFFF40;
+    --LayerOnAccentAcrylicFillColorDefault: #FFFFFF40;
+    --LayerOnMicaBaseAltFillColorDefault: #FFFFFFB3;
+    --LayerOnMicaBaseAltFillColorSecondary: #0000000A;
+    --LayerOnMicaBaseAltFillColorTertiary: #F9F9F9FF;
+    --LayerOnMicaBaseAltFillColorTransparent: #00000000;
+    --SolidBackgroundFillColorBase: #F3F3F3FF;
+    --SolidBackgroundFillColorSecondary: #EEEEEEFF;
+    --SolidBackgroundFillColorTertiary: #F9F9F9FF;
+    --SolidBackgroundFillColorQuarternary: #FFFFFFFF;
+    --SolidBackgroundFillColorTransparent: #F3F3F300;
+    --SolidBackgroundFillColorBaseAlt: #DADADAFF;
+    --SystemFillColorSuccess: #0F7B0FFF;
+    --SystemFillColorCaution: #9D5D00FF;
+    --SystemFillColorCritical: #C42B1CFF;
+    --SystemFillColorNeutral: #00000072;
+    --SystemFillColorSolidNeutral: #8A8A8AFF;
+    --SystemFillColorAttentionBackground: #F6F6F680;
+    --SystemFillColorSuccessBackground: #DFF6DDFF;
+    --SystemFillColorCautionBackground: #FFF4CEFF;
+    --SystemFillColorCriticalBackground: #FDE7E9FF;
+    --SystemFillColorNeutralBackground: #00000006;
+    --SystemFillColorSolidAttentionBackground: #F7F7F7FF;
+    --SystemFillColorSolidNeutralBackground: #F3F3F3FF;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --AcrylicTint: #1C1C1C;
+        --ControlElevationBorder: var(--ControlStrokeColorSecondary) var(--ControlStrokeColorDefault) var(--ControlStrokeColorDefault) var(--ControlStrokeColorDefault);
+        /*WinUI Colors*/
+        --TextFillColorPrimary: #FFFFFFFF;
+        --TextFillColorSecondary: #FFFFFFC5;
+        --TextFillColorTertiary: #FFFFFF87;
+        --TextFillColorDisabled: #FFFFFF5D;
+        --TextFillColorInverse: #000000E4;
+        --AccentTextFillColorDisabled: #FFFFFF5D;
+        --TextOnAccentFillColorSelectedText: #FFFFFFFF;
+        --TextOnAccentFillColorPrimary: #000000FF;
+        --TextOnAccentFillColorSecondary: #00000080;
+        --TextOnAccentFillColorDisabled: #FFFFFF87;
+        --ControlFillColorDefault: #FFFFFF0F;
+        --ControlFillColorSecondary: #FFFFFF15;
+        --ControlFillColorTertiary: #FFFFFF08;
+        --ControlFillColorDisabled: #FFFFFF0B;
+        --ControlFillColorTransparent: #FFFFFF00;
+        --ControlFillColorInputActive: #1E1E1EB3;
+        --ControlStrongFillColorDefault: #FFFFFF8B;
+        --ControlStrongFillColorDisabled: #FFFFFF3F;
+        --ControlSolidFillColorDefault: #454545FF;
+        --SubtleFillColorTransparent: #FFFFFF00;
+        --SubtleFillColorSecondary: #FFFFFF0F;
+        --SubtleFillColorTertiary: #FFFFFF0A;
+        --SubtleFillColorDisabled: #FFFFFF00;
+        --ControlAltFillColorTransparent: #FFFFFF00;
+        --ControlAltFillColorSecondary: #00000019;
+        --ControlAltFillColorTertiary: #FFFFFF0B;
+        --ControlAltFillColorQuarternary: #FFFFFF12;
+        --ControlAltFillColorDisabled: #FFFFFF00;
+        --ControlOnImageFillColorDefault: #1C1C1CB3;
+        --ControlOnImageFillColorSecondary: #1A1A1AFF;
+        --ControlOnImageFillColorTertiary: #131313FF;
+        --ControlOnImageFillColorDisabled: #1E1E1EFF;
+        --AccentFillColorDisabled: #FFFFFF28;
+        --ControlStrokeColorDefault: #FFFFFF12;
+        --ControlStrokeColorSecondary: #FFFFFF18;
+        --ControlStrokeColorOnAccentDefault: #FFFFFF14;
+        --ControlStrokeColorOnAccentSecondary: #00000023;
+        --ControlStrokeColorOnAccentTertiary: #00000037;
+        --ControlStrokeColorOnAccentDisabled: #00000033;
+        --ControlStrokeColorForStrongFillWhenOnImage: #0000006B;
+        --CardStrokeColorDefault: #00000019;
+        --CardStrokeColorDefaultSolid: #1C1C1CFF;
+        --ControlStrongStrokeColorDefault: #FFFFFF8B;
+        --ControlStrongStrokeColorDisabled: #FFFFFF28;
+        --SurfaceStrokeColorDefault: #75757566;
+        --SurfaceStrokeColorFlyout: #00000033;
+        --SurfaceStrokeColorInverse: #0000000F;
+        --DividerStrokeColorDefault: #FFFFFF15;
+        --FocusStrokeColorOuter: #FFFFFFFF;
+        --FocusStrokeColorInner: #000000B3;
+        --CardBackgroundFillColorDefault: #FFFFFF0D;
+        --CardBackgroundFillColorSecondary: #FFFFFF08;
+        --SmokeFillColorDefault: #0000004D;
+        --LayerFillColorDefault: #3A3A3A4C;
+        --LayerFillColorAlt: #FFFFFF0D;
+        --LayerOnAcrylicFillColorDefault: #FFFFFF09;
+        --LayerOnAccentAcrylicFillColorDefault: #FFFFFF09;
+        --LayerOnMicaBaseAltFillColorDefault: #3A3A3A73;
+        --LayerOnMicaBaseAltFillColorSecondary: #FFFFFF0F;
+        --LayerOnMicaBaseAltFillColorTertiary: #2C2C2CFF;
+        --LayerOnMicaBaseAltFillColorTransparent: #FFFFFF00;
+        --SolidBackgroundFillColorBase: #202020FF;
+        --SolidBackgroundFillColorSecondary: #1C1C1CFF;
+        --SolidBackgroundFillColorTertiary: #282828FF;
+        --SolidBackgroundFillColorQuarternary: #2C2C2CFF;
+        --SolidBackgroundFillColorTransparent: #20202000;
+        --SolidBackgroundFillColorBaseAlt: #0A0A0AFF;
+        --SystemFillColorSuccess: #6CCB5FFF;
+        --SystemFillColorCaution: #FCE100FF;
+        --SystemFillColorCritical: #FF99A4FF;
+        --SystemFillColorNeutral: #FFFFFF8B;
+        --SystemFillColorSolidNeutral: #9D9D9DFF;
+        --SystemFillColorAttentionBackground: #FFFFFF08;
+        --SystemFillColorSuccessBackground: #393D1BFF;
+        --SystemFillColorCautionBackground: #433519FF;
+        --SystemFillColorCriticalBackground: #442726FF;
+        --SystemFillColorNeutralBackground: #FFFFFF08;
+        --SystemFillColorSolidAttentionBackground: #2E2E2EFF;
+        --SystemFillColorSolidNeutralBackground: #2E2E2EFF;
+    }
+}
+
+* {
+    background-clip: padding-box;
+    user-select: none;
+}
+
+
+[role=button], [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: default;
+}
+
+body {
+    background-color: var(--SolidBackgroundFillColorBase);
+    color: var(--TextFillColorPrimary);
+    overflow: hidden;
+}
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+.blazor-error-boundary {
+    background: #b32121;
+    padding: 1rem 1rem 1rem 3.7rem;
+    color: white;
+}
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred."
+    }
+
+.card {
+    background-color: var(--CardBackgroundFillColorDefault);
+    border: var(--CardBorderThemeThickness) solid var(--CardStrokeColorDefault);
+    border-radius: var(--CardCornerRadius);
+    background-clip: padding-box;
+}
+
+.button, button {
+    display: inline-block;
+    cursor: default;
+    text-decoration: none;
+    color: var(--TextFillColorPrimary);
+    background-color: var(--ControlFillColorDefault);
+    border: 1px solid;
+    border-color: var(--ControlElevationBorder);
+    border-radius: var(--ControlCornerRadius);
+    padding: 5px 11px 6px 11px;
+}
+
+    .button:hover, button:hover {
+        transition: background-color 0.166s ease;
+        background-color: var(--ControlFillColorSecondary);
+        border-color: var(--ControlElevationBorder);
+        color: var(--TextFillColorPrimary);
+    }
+
+    .button:active, button:active {
+        background-color: var(--ControlFillColorTertiary);
+        border-color: var(--ControlElevationBorder);
+        color: var(--TextFillColorPrimary);
+    }
+
+.subtle-button, .subtle-icon-button {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+@font-face {
+    font-family: fluentui;
+    src: url(/fluentui.ttf) format("truetype");
+}
+
+.icon, .subtle-icon-button {
+    font-family: fluentui;
+    font-size: 20px;
+}
+
+.subtle-icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+}
